@@ -1,15 +1,16 @@
-# Yuhao Lin - Personal Website
+# Yuhao Lin - Personal Portfolio
 
-A modern, responsive personal website built with React and Framer Motion. This website showcases my skills, experience, and projects in an elegant and interactive way.
+A modern, responsive personal portfolio website built with React and Framer Motion. This website showcases my skills, experience, and projects in an elegant and interactive way.
 
-## 🚀 Features
+## ✨ Features
 
 - **Modern Design**: Clean and professional design with smooth animations
 - **Responsive Layout**: Fully responsive design that works on all devices
 - **Interactive Animations**: Smooth scroll animations and hover effects using Framer Motion
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Contact Form**: Functional contact form with FormSubmit integration
+- **Project Showcase**: Featured projects with conditional links
 - **Performance Optimized**: Fast loading times and optimized for SEO
-- **Contact Form**: Functional contact form with validation
-- **Dark/Light Theme Ready**: Easy to implement theme switching
 
 ## 🛠️ Technologies Used
 
@@ -17,23 +18,7 @@ A modern, responsive personal website built with React and Framer Motion. This w
 - **Framer Motion**: Smooth animations and transitions
 - **React Icons**: Beautiful icon library
 - **CSS3**: Modern CSS with Grid, Flexbox, and custom properties
-- **Responsive Design**: Mobile-first approach
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── Navbar.js          # Navigation component
-│   ├── Hero.js            # Hero section
-│   ├── About.js           # About section
-│   ├── Skills.js          # Skills section
-│   ├── Experience.js      # Experience section
-│   └── Contact.js         # Contact section
-├── App.js                 # Main App component
-├── App.css               # Global styles
-└── index.js              # Entry point
-```
+- **FormSubmit**: Contact form backend service
 
 ## 🎨 Design Features
 
@@ -43,6 +28,25 @@ src/
 - **Progress Bars**: Animated skill progress indicators
 - **Hover Effects**: Interactive hover animations
 - **Smooth Scrolling**: Smooth navigation between sections
+- **Theme Switching**: Seamless dark/light mode toggle
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.js          # Navigation with theme toggle
+│   ├── Hero.js            # Hero section with intro
+│   ├── About.js           # About section with stats
+│   ├── Skills.js          # Skills with progress bars
+│   ├── Experience.js      # Experience and projects
+│   └── Contact.js         # Contact form and info
+├── context/
+│   └── ThemeContext.js    # Theme management
+├── App.js                 # Main App component
+├── App.css               # Global styles
+└── index.js              # Entry point
+```
 
 ## 🚀 Getting Started
 
@@ -56,8 +60,8 @@ src/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yuhaolin/personal-website.git
-cd personal-website
+git clone https://github.com/yuhao-lin007/codeWithYuhao.git
+cd codeWithYuhao
 ```
 
 2. Install dependencies:
@@ -74,101 +78,121 @@ npm start
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Building for Production
+## 🎯 Sections Overview
 
-```bash
-npm run build
-```
+### Hero Section
 
-This creates a `build` folder with the production-ready files.
+- Personal introduction and call-to-action
+- Social media links
+- Animated floating elements
 
-## 📱 Responsive Design
+### About Section
 
-The website is fully responsive and optimized for:
+- Personal description and background
+- Key statistics and achievements
+- Professional summary
 
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (320px - 767px)
+### Skills Section
 
-## 🎯 Sections
+- Technical skills with progress bars
+- Categorized by expertise level
+- Animated skill indicators
 
-1. **Hero Section**: Introduction with call-to-action buttons
-2. **About Section**: Personal information and statistics
-3. **Skills Section**: Technical skills with progress bars
-4. **Experience Section**: Work experience and featured projects
-5. **Contact Section**: Contact form and social links
+### Experience Section
+
+- Work experience timeline
+- Featured projects with images
+- Academic projects showcase
+- Conditional project links
+
+### Contact Section
+
+- Functional contact form
+- Contact information display
+- Social media integration
+- Math captcha for spam protection
 
 ## 🔧 Customization
 
-### Colors
+### Colors & Theme
 
-The main color scheme can be modified in `App.css`:
+The color scheme and theme can be modified in `App.css`:
 
 - Primary: `#667eea`
 - Secondary: `#764ba2`
-- Accent: `#ffd700`
+- Dark mode variables
+- Light mode variables
 
-### Content
+### Content Updates
 
-Update the content in each component file to match your information:
+Update the content in each component file:
 
 - Personal details in `Hero.js`
 - About information in `About.js`
 - Skills and experience in respective components
 - Contact information in `Contact.js`
 
-### Styling
+### Styling Modifications
 
 Modify `App.css` to change:
 
 - Colors and gradients
-- Typography
-- Spacing and layout
+- Typography and spacing
 - Animations and transitions
+- Responsive breakpoints
+
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+
+- **Desktop** (1200px+): Full layout with all features
+- **Tablet** (768px - 1199px): Adapted layout
+- **Mobile** (320px - 767px): Mobile-first design
+
+## 🌟 Key Features
+
+### Dark/Light Mode
+
+- System preference detection
+- Manual toggle in navbar
+- Persistent theme selection
+- Smooth theme transitions
+
+### Contact Form
+
+- FormSubmit integration
+- Real-time validation
+- Math captcha protection
+- Success/error feedback
+
+### Project Showcase
+
+- Featured projects with images
+- Conditional "View Project" links
+- Technology tags
+- Responsive project cards
+
+### Animations
+
+- Framer Motion integration
+- Scroll-triggered animations
+- Hover effects
+- Loading animations
 
 ## 📈 Performance
 
 - Optimized images and assets
-- Lazy loading for better performance
 - Minimal bundle size
 - SEO optimized with proper meta tags
-
-## 🌐 Deployment
-
-The website can be deployed to various platforms:
-
-### Netlify
-
-1. Connect your GitHub repository
-2. Build command: `npm run build`
-3. Publish directory: `build`
-
-### Vercel
-
-1. Import your GitHub repository
-2. Framework preset: Create React App
-3. Deploy automatically
-
-### GitHub Pages
-
-1. Add `homepage` field to `package.json`
-2. Install `gh-pages`: `npm install --save-dev gh-pages`
-3. Add deploy script to `package.json`
-4. Run `npm run deploy`
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+- Fast loading times
+- Responsive image loading
 
 ## 📞 Contact
 
-- **Email**: yuhao.lin@example.com
-- **LinkedIn**: [linkedin.com/in/yuhaolin](https://linkedin.com/in/yuhaolin)
-- **GitHub**: [github.com/yuhaolin](https://github.com/yuhaolin)
+- **Email**: yuhao4399@gmail.com
+- **LinkedIn**: [linkedin.com/in/yuhaolinn](https://linkedin.com/in/yuhaolinn)
+- **GitHub**: [github.com/yuhao-lin007](https://github.com/yuhao-lin007)
+- **Twitter**: [x.com/TainY1\_](https://x.com/TainY1_)
 
 ---
 
