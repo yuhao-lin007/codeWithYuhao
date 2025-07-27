@@ -2,6 +2,8 @@
 
 A modern, responsive personal portfolio website built with React and Framer Motion. This website showcases my skills, experience, and projects in an elegant and interactive way.
 
+**🌐 Live Website**: [https://code-with-yuhao.vercel.app/](https://code-with-yuhao.vercel.app/)
+
 ## ✨ Features
 
 - **Modern Design**: Clean and professional design with smooth animations
